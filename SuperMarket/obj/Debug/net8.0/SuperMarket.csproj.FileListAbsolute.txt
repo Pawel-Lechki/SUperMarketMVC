@@ -28,3 +28,4 @@ E:\dotnet\SuperMarket\SuperMarket\obj\Debug\net8.0\refint\SuperMarket.dll
 E:\dotnet\SuperMarket\SuperMarket\obj\Debug\net8.0\SuperMarket.pdb
 E:\dotnet\SuperMarket\SuperMarket\obj\Debug\net8.0\SuperMarket.genruntimeconfig.cache
 E:\dotnet\SuperMarket\SuperMarket\obj\Debug\net8.0\ref\SuperMarket.dll
+E:\dotnet\SuperMarket\SuperMarket\obj\Debug\net8.0\SuperMarket.sourcelink.json
