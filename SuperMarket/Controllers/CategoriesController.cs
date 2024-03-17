@@ -47,4 +47,10 @@ public class CategoriesController : Controller
 
         return View(category);
     }
+
+    public IActionResult Delete(int id)
+    {
+        CategoryRepository.DeleteCategory(id);
+        return RedirectToAction(nameof(Index));
+    }
 }
