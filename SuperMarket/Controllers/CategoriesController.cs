@@ -11,13 +11,22 @@ public class CategoriesController : Controller
         var categories = CategoryRepository.GetCategories();
         return View(categories);
     }
-    
+    [HttpGet]
     public IActionResult Edit([FromRoute]int? id)
     {
         //var category = new Category { CategoryId = id.HasValue ? id.Value : 0 };
         var category = CategoryRepository.GetCategoryById(id.HasValue?id.Value:0);
         return View(category);
     }
-    
-    
+    [HttpPost]
+    public IActionResult Edit(Category category)
+    {
+        if (ModelState.IsValid)
+        {
+            CategoryRepository.UpdateCategory(category.CategoryId, category);
+            return RedirectToAction(nameof(Index));
+        }
+
+        return View(category);
+    }
 }
